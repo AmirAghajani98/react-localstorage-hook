@@ -1,0 +1,25 @@
+{
+  "name": "react-localstorage-hook",
+  "version": "1.0.0",
+  "description": "A React hook for managing localStorage with expiration support.",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "hook",
+    "localStorage",
+    "expiration"
+  ],
+  "author": "Amir Aghajani",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
