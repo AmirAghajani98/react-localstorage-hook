@@ -1,6 +1,7 @@
 # react-localstorage-hook
 
 A React hook for managing localStorage with expiration support.
+![CI](https://github.com/AmirAghajani98/react-localstorage-hook/actions/workflows/ci.yml/badge.svg)
 
 ## Installation
 

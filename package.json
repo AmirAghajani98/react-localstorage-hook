@@ -2,11 +2,12 @@
   "name": "react-localstorage-hook-with-expiry",
   "version": "1.0.0",
   "description": "A React hook for managing localStorage with expiry",
-  "main": "dist/index.js",
+  "main": "index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
+    "start": "dist/index.js",
     "build": "tsc",
     "test": "jest"
   },

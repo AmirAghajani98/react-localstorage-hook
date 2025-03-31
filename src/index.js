@@ -1,9 +1,6 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.useLocalStorageWithExpiry = useLocalStorageWithExpiry;
-const react_1 = require("react");
-function useLocalStorageWithExpiry(key, initialValue, expiryInMinutes) {
-    const [storedValue, setStoredValue] = (0, react_1.useState)(() => {
+import { useState } from "react";
+export function useLocalStorageWithExpiry(key, initialValue, expiryInMinutes) {
+    const [storedValue, setStoredValue] = useState(() => {
         if (typeof window === "undefined")
             return initialValue;
         try {
