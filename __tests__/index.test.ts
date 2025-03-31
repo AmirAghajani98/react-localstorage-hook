@@ -1,5 +1,5 @@
 import { renderHook, act } from "@testing-library/react";
-import { useLocalStorageWithExpiry } from "../index";
+import { useLocalStorageWithExpiry } from "../dist/index";
 
 describe("useLocalStorageWithExpiry", () => {
   beforeEach(() => {
