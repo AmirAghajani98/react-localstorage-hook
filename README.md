@@ -21,11 +21,11 @@ yarn add react-localstorage-hook-with-expiry
 ## Basic Usage
 
 ```jsx
-import useLocalStorage from 'react-localstorage-hook-with-expiry';
+import useLocalStorage from "react-localstorage-hook-with-expiry";
 
 function MyComponent() {
-  const [token, setToken] = useLocalStorage('auth_token', null, {
-    expiry: 24 * 60 * 60 * 1000 // 24 hours
+  const [token, setToken] = useLocalStorage("auth_token", null, {
+    expiry: 24 * 60 * 60 * 1000, // 24 hours
   });
 
   // ...
@@ -34,33 +34,33 @@ function MyComponent() {
 
 ## Parameters
 
-| Parameter     | Type     | Default | Description                     |
-|--------------|----------|---------|---------------------------------|
-| key          | string   | -       | localStorage key                |
-| initialValue | any      | -       | Initial value                   |
-| options      | object   | {}      | Optional configuration          |
+| Parameter    | Type   | Default | Description            |
+| ------------ | ------ | ------- | ---------------------- |
+| key          | string | -       | localStorage key       |
+| initialValue | any    | -       | Initial value          |
+| options      | object | {}      | Optional configuration |
 
 ### Options
 
-| Option  | Type     | Default | Description                     |
-|---------|----------|---------|---------------------------------|
-| expiry  | number   | null    | Expiration time in milliseconds |
-| encrypt | boolean  | false   | Enable data encryption          |
+| Option  | Type    | Default | Description                     |
+| ------- | ------- | ------- | ------------------------------- |
+| expiry  | number  | null    | Expiration time in milliseconds |
+| encrypt | boolean | false   | Enable data encryption          |
 
 ## Advanced Examples
 
 ### TypeScript Usage
 
 ```tsx
-const [user, setUser] = useLocalStorage<User>('user', null, {
-  expiry: 3600000 // 1 hour
+const [user, setUser] = useLocalStorage<User>("user", null, {
+  expiry: 3600000, // 1 hour
 });
 ```
 
 ### Removing Data
 
 ```jsx
-const [data, setData, removeData] = useLocalStorage('temp_data');
+const [data, setData, removeData] = useLocalStorage("temp_data");
 // ...
 removeData(); // Remove from localStorage
 ```
@@ -71,4 +71,4 @@ Suggestions and PRs are always welcome!
 
 ## 📜 License
 
-MIT
+MIT © [AmirAghajani98]
