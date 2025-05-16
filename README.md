@@ -14,8 +14,6 @@ A simple yet powerful React hook for managing localStorage with expiration suppo
 
 ```bash
 npm install react-localstorage-hook-with-expiry
-# or
-yarn add react-localstorage-hook-with-expiry
 ```
 
 ## Basic Usage
